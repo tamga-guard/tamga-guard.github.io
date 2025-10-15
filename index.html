@@ -1,0 +1,29 @@
+<!doctype html><html lang="en"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tamga Guard</title>
+<style>
+  :root{--bg:#0B0F14;--s2:#1A212B;--txt:#E6E8EC;--cu1:#E29A64;--cu2:#C7783F;--cu3:#A8622E}
+  html,body{height:100%;margin:0;background:var(--bg);color:var(--txt);font:16px/1.5 system-ui,Segoe UI,Inter,Roboto}
+  .wrap{min-height:100%;display:grid;place-items:center;padding:40px}
+  .card{background:var(--s2);border-radius:18px;padding:32px 28px;max-width:720px;box-shadow:0 6px 24px rgba(0,0,0,.35);border:1px solid #223041}
+  .title{font-weight:800;font-size:28px;margin:10px 0 6px}
+  .sub{opacity:.85;margin:0 0 18px}
+  .badge{display:inline-block;border-radius:999px;padding:6px 10px;border:1px solid #223041;background:#121820;font-weight:600}
+  .footer{opacity:.7;margin-top:18px;font-size:14px}
+  .logo{width:88px;height:88px;margin-bottom:12px}
+</style>
+<body><div class="wrap"><div class="card">
+  <!-- basit bakır “T” kalkanı (inline SVG) -->
+  <svg class="logo" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+    <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E29A64"/><stop offset="55%" stop-color="#C7783F"/><stop offset="100%" stop-color="#A8622E"/>
+    </linearGradient></defs>
+    <path d="M60 8 C86 8 100 10 100 10V58c0 22-17 38-40 48C37 96 20 80 20 58V10s14-2 40-2z" fill="none" stroke="url(#g)" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M60 12 C84 12 96 13.5 96 13.5V58c0 19-15 32-36 41C39 90 24 77 24 58V13.5S36 12 60 12z" fill="#1A212B" stroke="#223041" stroke-width="1.2"/>
+    <path d="M38 28 H82 L78 36 H66 V83 H54 V36 H42 Z" fill="url(#g)"/>
+  </svg>
+  <div class="title">Tamga Guard</div>
+  <p class="sub">Early-warning brand protection. CertStream → IntelMQ → proof packs.<br>“Markanın izi, nöbette.”</p>
+  <span class="badge">Contracts & Docs landing</span>
+  <div class="footer">Repos: tamga-contracts · tamga-pipeline · tamga-panel · tamga-ops</div>
+</div></div>
